@@ -23,8 +23,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/crownlte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Elixir stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Komodo stuff.
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER := true
 IS_PHONE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS= true
