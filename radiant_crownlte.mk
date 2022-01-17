@@ -23,17 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/crownlte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Komodo stuff.
-$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
-TARGET_INCLUDE_PIXEL_CHARGER := true
-IS_PHONE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS= true
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
+# Inherit some common Project Radiant stuff
+$(call inherit-product, vendor/radiant/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := crownlte
-PRODUCT_NAME := komodo_crownlte
+PRODUCT_NAME := radiant_crownlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N960F
 PRODUCT_MANUFACTURER := samsung

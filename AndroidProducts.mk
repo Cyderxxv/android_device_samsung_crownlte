@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/komodo_crownlte.mk
+    $(LOCAL_DIR)/radiant_crownlte.mk
 
 COMMON_LUNCH_CHOICES := \
-     komodo_crownlte-userdebug \
-     komodo_crownlte-eng \
-     komodo_crownlte-user
+     radiant_crownlte-userdebug \
+     radiant_crownlte-eng \
+     radiant_crownlte-user
